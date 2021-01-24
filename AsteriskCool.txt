@@ -1,0 +1,13 @@
+#!/bin/bash
+
+cd /home/ricardo/Escritorio/
+code asterisk --user-data-dir
+
+cd /etc/asterisk
+code sip.conf --user-data-dir
+code extensions.conf --user-data-dir
+code manager.conf --user-data-dir
+clear
+asterisk -rvvvvv
+
+
